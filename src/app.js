@@ -7,6 +7,8 @@ const geocode = require('./utils/geocode');
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public');
 const newViewPath = path.join(__dirname, '../templates/views'); //this is setting the new path for express to sth else instead of 'view'
@@ -78,6 +80,6 @@ app.get('*', (req, res) => {
     })
 });
 
-app.listen(3000, () => {
-    console.log("Listening for requests on port 3000")
+app.listen(port, () => {
+    console.log("Listening for requests on port " + port)
 })
