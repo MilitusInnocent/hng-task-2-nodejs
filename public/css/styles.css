@@ -74,4 +74,34 @@ form {
 
 #submit {
     background-color: aqua;
+    border-radius:10px;
+}
+
+.images {
+    display: grid;
+    flex-direction: column;
+    padding-top: 30px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 15px;
+    margin: 20px;
+}
+
+.project-box {
+    padding: 10px;
+}
+
+.filter-image {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.project-links a {
+    color: hsl(220, 14%, 12%);
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+    border-bottom: 3px solid grey;
 }
