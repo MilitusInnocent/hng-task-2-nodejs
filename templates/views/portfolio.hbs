@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio page</title>
+
+    <link rel="icon" href="/images/hng.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        <img class="logo" src="/images/zuri.jpg" alt="zuri logo">
+        <img class="logo" src="/images/hng.png" alt="hng logo">
+        {{>header}}
+        <br>
+        <br>
+        <br>
+        <div>Here are some of the links to my works</div>
+        <section id="projects" class="container projects">
+      <div class="heading">Recent Projects</div>
+
+      <div class="images">
+        <div class="project-box">
+          <img src="./images/homeTeach.jpg" class="filter-image design">
+          <br>
+          <span class="project-links">
+            <a href="https://staging-hometeach80.netlify.app/index.html">
+              <i class="fa fa-eye"> Live </i>
+            </a>
+            <a href="https://github.com/misspee007/HomeTeach-fe-pjt-80">
+              <i class="fa fa-code"> Code </i>
+            </a>
+          </span>
+        </div>
+
+        <div class="project-box">
+          <img src="./images/Responsive-design.jpg" class="filter-image design">
+          <br>
+          <span class="project-links">
+            <a href="https://misspee007.github.io/Responsive-web-design">
+              <i class="fa fa-eye"> Live </i>
+            </a>
+            <a href="https://github.com/misspee007/Responsive-web-design">
+              <i class="fa fa-code"> Code </i>
+            </a>
+          </span>
+        </div>
+
+        <div class="project-box">
+          <img src="./images/huddle.jpg" class="filter-image design">
+          <br>
+          <span class="project-links">
+            <a href="https://misspee007.github.io/practice-react-app">
+              <i class="fa fa-eye"> Live </i>
+            </a>
+            <a href="https://github.com/misspee007/practice-react-app">
+              <i class="fa fa-code"> Code </i>
+            </a>
+          </span>
+        </div>
+
+        <div class="project-box">
+          <img src="./images/google-homepage.jpg" class="filter-image design">
+          <br>
+          <span class="project-links">
+            <a href="https://misspee007.github.io/Google-Homepage">
+              <i class="fa fa-eye"> Live </i>
+            </a>
+            <a href="https://github.com/misspee007/Google-Homepage">
+              <i class="fa fa-code"> Code </i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+    </div>
+    
+    {{>footer}}
+</body>
+</html>

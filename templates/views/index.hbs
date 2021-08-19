@@ -6,23 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
 
-    <link rel="icon" href="/img/weather.png">
+    <link rel="icon" href="/images/hng.png">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 <body>
     <div class="main-content">
-        {{>header}}
-        <p>Get the weather of any location</p>
+            <img class="logo" src="/images/zuri.jpg" alt="zuri logo">
+            <img class="logo" src="/images/hng.png" alt="hng logo">
+            
+    
 
-        <form>
-            <input placeholder="Location">
-            <button>Search</button>
-        </form>
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+                <div class="inner">
+        
+                    <!-- LOGO -->
+                    <h3 class="masthead-brand">MyProfile</h3>
+                    <!-- NAVIGATION MENU -->
+                    {{>header}}
+                   
+                </div>
+            </header>
 
-        <p id="message-1"></p>
-        <p id="message-2"></p>
-        <p></p>
+            <div role="main" class="inner cover">
+                <br/>
+                
+                <!-- BIG IMAGE ON HOMEPAGE -->
+                <img src="images/profile.jpg" alt="My Main Image" width="500">
+                <br/>
+                <br/>
+
+                <h1 class="cover-heading">FullStack Engineer.</h1>
+
+                <p class="lead"> I'm a creative and enthusiastic programmer who loves solving societal problems via tech and effecting a great positive impact on the people around me.
+                </p>
+                
+                <p class="lead">
+                    <a href="/contact" class="btn btn-lg btn-secondary">Hire Me<br/></a>
+                    <br/>
+                </p>
+                
+            </div>
+
+
+    </div>
 
     </div>
     

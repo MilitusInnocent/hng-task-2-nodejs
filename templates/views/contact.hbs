@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+
+    <link rel="icon" href="/images/hng.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main-content">
+        <img class="logo" src="/images/zuri.jpg" alt="zuri logo">
+        <img class="logo" src="/images/hng.png" alt="hng logo">
+
+        <div class="inner">
+            {{>header}}
+        </div>
+
+        </div>
+                <form action="/contact" method="POST">
+                    <h4>Please fill the form below and be rest assured to get a response from me</h4>
+                    <input type="text" class="box" id="name" name="name" placeholder="Name" required />
+                    <br>
+                    <input type="text" class="box" id="email" name="email" placeholder="Email" required />
+                    <br>
+                    <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required />
+                    <br>
+                    <input type="submit" value="Submit" id="submit" />
+                </form>    
+
+
+         <div role="main" class="inner">
+            <br/>
+			 	 
+				<p>To contact me, send me an email at <br/> imilitus@gmail.com | +234 8070459053, +234 8130651872 | @militus_ </a></p>
+			   
+
+			
+             
+			
+        </div>
+    
+    {{>footer}}
+</body>
+</html>
