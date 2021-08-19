@@ -1,8 +1,11 @@
 const path = require('path')
 const express = require('express');
 const hbs = require('hbs');
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+require('dotenv').config();
+const { MONGO_URI } = process.env
+
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -20,8 +23,9 @@ hbs.registerPartials(partialsPath)
 
 //set up static directory to serve
 app.use(express.static(publicDirectoryPath))
+app.use(bodyParser.urlencoded({ extended: false })) 
 
-mongoose.connect('mongodb://militus:mili2ssmoxie@hngi8-task-2-db-shard-00-00.02xxm.mongodb.net:27017,hngi8-task-2-db-shard-00-01.02xxm.mongodb.net:27017,hngi8-task-2-db-shard-00-02.02xxm.mongodb.net:27017/test?replicaSet=atlas-jd1717-shard-0&ssl=true&authSource=admin', {
+mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
