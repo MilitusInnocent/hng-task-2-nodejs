@@ -19,7 +19,6 @@ app.set('views', newViewPath) //set path for the new path
 hbs.registerPartials(partialsPath)
 
 //set up static directory to serve
-app.use(bodyParser.json())
 app.use(express.static(publicDirectoryPath))
 
 mongoose.connect('mongodb://militus:mili2ssmoxie@hngi8-task-2-db-shard-00-00.02xxm.mongodb.net:27017,hngi8-task-2-db-shard-00-01.02xxm.mongodb.net:27017,hngi8-task-2-db-shard-00-02.02xxm.mongodb.net:27017/test?replicaSet=atlas-jd1717-shard-0&ssl=true&authSource=admin', {
